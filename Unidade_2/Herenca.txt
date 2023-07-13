@@ -1,0 +1,48 @@
+1. Relação "é um":
+   - A herança estabelece uma relação "é um" entre a classe derivada e a classe base.
+   - Isso significa que a classe derivada é um tipo específico da classe base, com características adicionais ou modificadas.
+
+2. Reutilização de código:
+   - A herança permite reutilizar o código definido na classe base, evitando a necessidade de escrever o mesmo código novamente na classe derivada.
+   - A classe derivada herda os atributos e métodos da classe base e pode adicionar novos membros ou modificar os existentes.
+
+3. Modificadores de acesso:
+   - Os modificadores de acesso (public, protected e private) são usados para controlar o acesso aos membros herdados da classe base na classe derivada.
+   - O modificador `public` permite que os membros herdados sejam acessados livremente fora da classe derivada.
+   - O modificador `protected` permite que os membros herdados sejam acessados dentro da classe derivada e suas classes derivadas subsequentes.
+   - O modificador `private` torna os membros herdados inacessíveis fora da classe base e, portanto, também inacessíveis na classe derivada.
+
+Aqui está um exemplo ilustrativo:
+
+```cpp
+class Veiculo {
+protected:
+  int velocidade;
+
+public:
+  Veiculo(int v) : velocidade(v) {}
+
+  void acelerar() {
+    cout << "Veículo acelerando...\n";
+  }
+};
+
+class Carro : public Veiculo {
+public:
+  Carro(int v) : Veiculo(v) {}
+
+  void virar() {
+    cout << "Carro virando...\n";
+  }
+};
+```
+
+Neste exemplo, a classe `Veiculo` é a classe base e a classe `Carro` é a classe derivada. A classe `Carro` herda o atributo `velocidade` e o método `acelerar()` da classe `Veiculo`. Além disso, a classe `Carro` adiciona o método `virar()` que é exclusivo para carros.
+
+```cpp
+Carro carro(0);
+carro.acelerar();  // Output: "Veículo acelerando..."
+carro.virar();     // Output: "Carro virando..."
+```
+
+No exemplo acima, podemos criar um objeto da classe `Carro` e acessar tanto o método herdado `acelerar()` da classe `Veiculo` quanto o método exclusivo `virar()` da classe `Carro`.

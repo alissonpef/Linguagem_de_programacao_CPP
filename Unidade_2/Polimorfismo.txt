@@ -1,0 +1,51 @@
+1. Polimorfismo de sobrescrita (override):
+   - O polimorfismo de sobrescrita ocorre quando uma classe derivada redefine um método da classe base com a mesma assinatura.
+   - O método sobrescrito na classe derivada substitui o comportamento do método correspondente na classe base.
+   - Isso permite que o método seja chamado usando um objeto da classe derivada, mas se comportando de acordo com a implementação da classe derivada.
+
+2. Polimorfismo de sobrecarga (overload):
+   - O polimorfismo de sobrecarga ocorre quando uma classe possui vários métodos com o mesmo nome, mas com diferentes parâmetros.
+   - Os métodos sobrecarregados têm a mesma assinatura de nome, mas diferem nos tipos e/ou número de parâmetros.
+   - Isso permite que diferentes versões do método sejam chamadas com base nos argumentos fornecidos durante a chamada.
+
+3. Uso de ponteiros ou referências:
+   - O polimorfismo é frequentemente alcançado usando ponteiros ou referências para a classe base, que podem apontar para objetos de classes derivadas.
+   - Isso permite que chamadas de método sejam feitas usando ponteiros ou referências da classe base, mas executando o comportamento apropriado nas classes derivadas.
+
+Aqui está um exemplo ilustrativo:
+
+```cpp
+class Animal {
+public:
+  virtual void fazerSom() {
+    cout << "O animal faz um som.\n";
+  }
+};
+
+class Cachorro : public Animal {
+public:
+  void fazerSom() override {
+    cout << "O cachorro faz au au!\n";
+  }
+};
+
+class Gato : public Animal {
+public:
+  void fazerSom() override {
+    cout << "O gato faz miau!\n";
+  }
+};
+```
+
+Neste exemplo, a classe `Animal` é a classe base, e as classes `Cachorro` e `Gato` são classes derivadas. Cada classe derivada sobrescreve o método `fazerSom()` da classe base com sua própria implementação.
+
+```cpp
+Animal* animal1 = new Cachorro();
+Animal* animal2 = new Gato();
+
+animal1->fazerSom();  // Output: "O cachorro faz au au!"
+animal2->fazerSom();  // Output: "O gato faz miau!"
+```
+
+No exemplo acima, podemos criar objetos das classes `Cachorro` e `Gato` e armazená-los em ponteiros da classe base `Animal`. Ao chamar o método `fazerSom()` através desses ponteiros, o comportamento apropriado é executado, conforme definido nas classes derivadas.
+

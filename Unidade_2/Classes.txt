@@ -1,0 +1,85 @@
+1. Atributos (ou membros de dados):
+   - Os atributos representam as características ou propriedades dos objetos da classe.
+   - Eles são declarados dentro da definição da classe e descrevem o estado dos objetos.
+   - Cada objeto criado a partir da classe possui sua própria cópia dos atributos.
+
+   Exemplo:
+   ```cpp
+   class Pessoa {
+   public:
+     string nome;   // Atributo para armazenar o nome da pessoa
+     int idade;     // Atributo para armazenar a idade da pessoa
+   };
+   ```
+
+2. Métodos (ou membros de função):
+   - Os métodos representam as ações ou comportamentos que os objetos da classe podem executar.
+   - Eles são declarados dentro da definição da classe e descrevem as operações que os objetos podem realizar.
+   - Os métodos podem acessar e manipular os atributos da classe.
+
+   Exemplo:
+   ```cpp
+   class Pessoa {
+   public:
+     string nome;
+     int idade;
+
+     void apresentar() {
+       cout << "Olá, meu nome é " << nome << " e tenho " << idade << " anos.\n";
+     }
+   };
+   ```
+
+3. Construtores:
+   - Os construtores são métodos especiais que são chamados automaticamente quando um objeto da classe é criado.
+   - Eles são usados para inicializar os atributos do objeto.
+   - Um construtor tem o mesmo nome da classe e pode ter parâmetros ou não.
+
+   Exemplo:
+   ```cpp
+   class Pessoa {
+   public:
+     string nome;
+     int idade;
+
+     // Construtor sem parâmetros
+     Pessoa() {
+       nome = "";
+       idade = 0;
+     }
+
+     // Construtor com parâmetros
+     Pessoa(string n, int i) {
+       nome = n;
+       idade = i;
+     }
+   };
+   ```
+
+4. Encapsulamento:
+   - O encapsulamento é um princípio da programação orientada a objetos que combina atributos e métodos relacionados em uma única unidade (a classe).
+   - Ele permite controlar o acesso aos atributos e métodos, definindo-os como públicos, privados ou protegidos.
+   - Os atributos privados só podem ser acessados pelos métodos da classe, enquanto os atributos públicos podem ser acessados diretamente.
+
+   Exemplo:
+   ```cpp
+   class Pessoa {
+   private:
+     string nome;   // Atributo privado
+     int idade;     // Atributo privado
+
+   public:
+     void setNome(string n) {
+       nome = n;
+     }
+
+     void setIdade(int i) {
+       idade = i;
+     }
+
+     void apresentar() {
+       cout << "Olá, meu nome é " << nome << " e tenho " << idade << " anos.\n";
+     }
+   };
+   ```
+

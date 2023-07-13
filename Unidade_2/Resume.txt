@@ -1,0 +1,48 @@
+1. Polimorfismo:
+   ```cpp
+   // Exemplo de Polimorfismo
+   // Neste exemplo, temos uma classe base Animal e duas subclasses (Cachorro e Gato).
+   // Cada classe possui um método fazerSom() que é sobreposto nas subclasses.
+   // O polimorfismo é demonstrado ao chamar o método fazerSom() através de ponteiros para a classe base, resultando no comportamento apropriado para cada animal.
+
+   // ... código da classe Animal, Cachorro e Gato ...
+
+   // Uso polimórfico
+   Animal* animal1 = new Cachorro();
+   Animal* animal2 = new Gato();
+
+   animal1->fazerSom();  // Output: "O cachorro faz au au!"
+   animal2->fazerSom();  // Output: "O gato faz miau!"
+   ```
+
+2. Herança:
+   ```cpp
+   // Exemplo de Herança
+   // Neste exemplo, temos uma classe base Veiculo com um atributo velocidade e um método acelerar().
+   // A classe Carro é uma subclasse de Veiculo e herda o atributo e o método da classe base.
+   // A subclasse Carro adiciona um método virar() exclusivo.
+
+   // ... código da classe Veiculo e Carro ...
+
+   // Uso de herança
+   Carro carro(0);
+   carro.acelerar();  // Output: "Veículo acelerando..."
+   carro.virar();     // Output: "Carro virando..."
+   ```
+
+3. Sobrecarga de Operadores:
+   ```cpp
+   // Exemplo de Sobrecarga de Operadores
+   // Neste exemplo, temos uma classe Vetor que representa um vetor bidimensional.
+   // A classe define a sobrecarga do operador + para adicionar dois objetos Vetor.
+   // A sobrecarga do operador + permite que a adição seja realizada de forma intuitiva.
+
+   // ... código da classe Vetor com a sobrecarga do operador + ...
+
+   // Uso de sobrecarga de operadores
+   Vetor vetor1(2, 3);
+   Vetor vetor2(4, 5);
+   Vetor vetor3 = vetor1 + vetor2;
+   cout << "Resultado: (" << vetor3.getX() << ", " << vetor3.getY() << ")\n";
+   // Output: "Resultado: (6, 8)"
+   ```

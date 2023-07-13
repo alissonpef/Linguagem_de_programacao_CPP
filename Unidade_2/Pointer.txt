@@ -1,0 +1,65 @@
+1. Ponteiro para objeto:
+   ```cpp
+   // Exemplo de ponteiro para objeto
+   // Neste exemplo, usamos um ponteiro para armazenar e manipular um objeto da classe Retangulo.
+
+   // ... código das classes e funções ...
+
+   Retangulo* retanguloPtr = new Retangulo(4, 5);
+   retanguloPtr->calcularArea();  // Chamar um método do objeto através do ponteiro
+
+   delete retanguloPtr;  // Liberar a memória alocada pelo objeto
+   ```
+
+2. Ponteiro para ponteiro:
+   ```cpp
+   // Exemplo de ponteiro para ponteiro
+   // Neste exemplo, temos um ponteiro para ponteiro que aponta para um ponteiro que aponta para um objeto da classe Retangulo.
+
+   // ... código das classes e funções ...
+
+   Retangulo* retanguloPtr = new Retangulo(4, 5);
+   Retangulo** retanguloPtrPtr = &retanguloPtr;
+
+   (*retanguloPtrPtr)->calcularArea();  // Chamar um método do objeto através do ponteiro para ponteiro
+
+   delete *retanguloPtrPtr;  // Liberar a memória alocada pelo objeto
+   ```
+
+3. Ponteiro para membro:
+   ```cpp
+   // Exemplo de ponteiro para membro
+   // Neste exemplo, temos um ponteiro para membro que aponta para um método de uma classe.
+
+   // ... código das classes e funções ...
+
+   double (Retangulo::*calcularAreaPtr)() = &Retangulo::calcularArea;
+
+   Retangulo retangulo(4, 5);
+   (retangulo.*calcularAreaPtr)();  // Chamar o método através do ponteiro para membro
+   ```
+
+4. Ponteiro para função membro estática:
+   ```cpp
+   // Exemplo de ponteiro para função membro estática
+   // Neste exemplo, temos um ponteiro para uma função membro estática de uma classe.
+
+   // ... código das classes e funções ...
+
+   double (*calcularAreaPtr)() = &Retangulo::calcularAreaEstatica;
+
+   (Retangulo::*calcularAreaPtr)();  // Chamar a função membro estática através do ponteiro
+   ```
+
+5. Ponteiro para membro de classe:
+   ```cpp
+   // Exemplo de ponteiro para membro de classe
+   // Neste exemplo, temos um ponteiro para um membro de classe, que aponta para um atributo da classe.
+
+   // ... código das classes e funções ...
+
+   double Retangulo::*larguraPtr = &Retangulo::largura;
+
+   Retangulo retangulo(4, 5);
+   retangulo.*larguraPtr = 10;  // Acessar e modificar o atributo através do ponteiro para membro de classe
+   ```

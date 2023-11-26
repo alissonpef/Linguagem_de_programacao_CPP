@@ -1,4 +1,4 @@
-# Linguagem de Programação 2 em C++
+# Linguagem de Programação 2 em C++ (POO)
 
 ## Descrição
 
@@ -26,10 +26,6 @@ Este repositório abriga materiais relacionados à disciplina de Linguagem de Pr
 
 - **Entrada e Saída de Dados:** Manipulação de arquivos, acesso sequencial, acesso direto. Exploração das operações de entrada e saída.
 
-<div>
-  <strong>Sinta-se à vontade para explorar os materiais e colaborar neste repositório. Boa jornada de aprendizado em Linguagem de Programação Orientada a Objetos em C++.<strong>
-<div>
-
   ## Como testar vazamento de memória com o Valgrind
 <div>
   
@@ -39,3 +35,9 @@ Este repositório abriga materiais relacionados à disciplina de Linguagem de Pr
     
   - valgrind --leak-check=full ./run
 <div>
+
+## Contribuições
+<div>
+  <strong>Sinta-se à vontade para explorar os materiais e colaborar neste repositório. Boa jornada de aprendizado em Linguagem de Programação Orientada a Objetos em C++.<strong>
+<div>
+

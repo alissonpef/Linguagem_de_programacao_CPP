@@ -29,3 +29,13 @@ Este repositório abriga materiais relacionados à disciplina de Linguagem de Pr
 <div>
   <strong>Sinta-se à vontade para explorar os materiais e colaborar neste repositório. Boa jornada de aprendizado em Linguagem de Programação Orientada a Objetos em C++.<strong>
 <div>
+
+  ## Como testar vazamento de memória com o Valgrind
+<div>
+  
+  - cd /mnt/(local do arquivo
+  
+  - g++ -std=c++17 main.cpp -o run -lgtest
+    
+  - valgrind --leak-check=full ./run
+<div>

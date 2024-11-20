@@ -1,43 +1,39 @@
-# Linguagem de Programação 2 em C++ (POO)
+# Linguagem de Programação II - C++  
+**Professor:** Antonio Carlos Sobieranski  
 
-## Descrição
+## 📚 Ementa  
+Este repositório contém materiais, exercícios e exemplos práticos relacionados à disciplina de **Linguagem de Programação II** em **C++**, com foco no paradigma de programação orientado a objetos (POO).  
 
-Este repositório abriga materiais relacionados à disciplina de Linguagem de Programação Orientada a Objetos em C++. A ementa da disciplina abrange os seguintes tópicos:
+### Conteúdo abordado:  
+1. **Fundamentos do Paradigma Orientado a Objetos**  
+   - Classes e métodos.  
+2. **Pilares da Programação Orientada a Objetos**  
+   - Encapsulamento, herança e polimorfismo.  
+3. **Modelagem e Solução de Problemas**  
+   - Utilização de conceitos de POO, decomposição por objetos e tipos abstratos de dados.  
+4. **Interface Gráfica com o Usuário (GUI)**  
+   - Criação de aplicações com interfaces visuais.  
+5. **Aspectos Tecnológicos Complementares**  
+   - Programação orientada a eventos.  
+   - Persistência de dados e objetos.  
+   - Tratamento de exceções.  
 
-- **Algoritmos e Lógica de Programação:** Compreensão dos princípios fundamentais para a construção de algoritmos eficientes.
-  
-- **Formas de Representação de Algoritmos:** Exploração de diferentes formas de representar algoritmos para facilitar o entendimento e a implementação.
+## 🎯 Objetivos da Disciplina  
 
-- **Programação Estruturada:** Introdução aos conceitos da programação estruturada, promovendo a organização lógica do código.
+- Objetivos Gerais: Capacitar os estudantes a compreender, modelar e implementar algoritmos utilizando o paradigma orientado a objetos.  
+- Objetivos Específicos: Entender a motivação para adoção do paradigma de POO. Conhecer os pilares da orientação a objetos: abstração, herança e polimorfismo. Decompor problemas com base nos conceitos de POO. Implementar soluções utilizando os aspectos e práticas de POO.  
 
-- **Variáveis:** Nomeação, declaração, inicialização e tipos de dados. Entendimento profundo das variáveis e seu papel na construção de programas.
+## 📂 Estrutura do Repositório  
+- **/Curso**: Materiais complementares e slides teóricos.  
+- **/Unidades**: Códigos úteis para implementação dos conceitos
+- **/Trabalhos**: Projetos e atividades avaliativas.  
 
-- **Expressões:** Abordagem de expressões aritméticas, literais, lógicas e relacionais. Construção de algoritmos mais complexos por meio de expressões eficientes.
+## 🛠️ Ferramentas Recomendadas  
+- **IDE:** Visual Studio Code.  
+- **Compilador:** GCC (com suporte a C++).  
 
-- **Estruturas de Controle de Fluxo:** Linear, condicional e de repetição. Exploração de diferentes estruturas de controle para direcionar o fluxo do programa.
+## 📫 Contato  
+Dúvidas? Entre em comigo por e-mail:  
+- **Alisson Pereira Ferreira:** [email](mailto:alissonpef@gmail.com)
 
-- **Estruturas de Dados Simples:** Manipulação de vetores, matrizes e registros para armazenamento eficiente de dados.
-
-- **Arquitetura de Programa Mínimo:** Exploração de paradigmas, regras de escopo, funções e modularização para o desenvolvimento de programas mais organizados.
-
-- **Ponteiros e Alocação Dinâmica:** Compreensão aprofundada do conceito de ponteiros e alocação dinâmica de memória.
-
-- **Funções:** Definição, declaração, e tipos de passagem de parâmetro. Utilização eficiente de funções para modularizar o código.
-
-- **Entrada e Saída de Dados:** Manipulação de arquivos, acesso sequencial, acesso direto. Exploração das operações de entrada e saída.
-
-  ## Como testar vazamento de memória com o Valgrind
-<div>
-  
-  - cd /mnt/(local do arquivo
-  
-  - g++ -std=c++17 main.cpp -o run -lgtest
-    
-  - valgrind --leak-check=full ./run
-<div>
-
-## Contribuições
-<div>
-  <strong>Sinta-se à vontade para explorar os materiais e colaborar neste repositório. Boa jornada de aprendizado em Linguagem de Programação Orientada a Objetos em C++.<strong>
-<div>
-
+Aproveite o aprendizado! 🚀

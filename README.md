@@ -26,11 +26,13 @@ Este repositório contém materiais, exercícios e exemplos práticos relacionad
 ## 📂 Estrutura do Repositório  
 - **/Curso**: Materiais complementares e slides teóricos.  
 - **/Unidades**: Códigos úteis para implementação dos conceitos
-- **/Trabalhos**: Projetos e atividades avaliativas.  
+- **/Trabalhos**: Projetos e atividades avaliativas.
+- **/QT_Creator**: Projetos focados na utilização do Qt para desenvolvimento de GUIs em C++.
 
 ## 🛠️ Ferramentas Recomendadas  
 - **IDE:** Visual Studio Code.  
-- **Compilador:** GCC (com suporte a C++).  
+- **Compilador:** GCC (com suporte a C++).
+- **Framework:** Qt Creator para desenvolvimento de interfaces gráficas.
 
 ## 📫 Contato  
 Dúvidas? Entre em comigo por e-mail:  

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/imagens">
+        <file>Cadeado_aberto_32.png</file>
+        <file>Cadeado_fechado_32.png</file>
+        <file>logo.png</file>
+    </qresource>
+</RCC>

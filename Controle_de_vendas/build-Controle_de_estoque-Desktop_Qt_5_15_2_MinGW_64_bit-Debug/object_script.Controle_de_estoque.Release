@@ -1,0 +1,17 @@
+release/fm_editarprodutovenda.o
+release/fm_gestaocolaboradores.o
+release/fm_gestaoestoque.o
+release/fm_gestaovendas.o
+release/fm_logar.o
+release/fm_novavenda.o
+release/funcoes_globais.o
+release/main.o
+release/mainwindow.o
+release/qrc_Arquivo_de_recursos.o
+release/moc_fm_editarprodutovenda.o
+release/moc_fm_gestaocolaboradores.o
+release/moc_fm_gestaoestoque.o
+release/moc_fm_gestaovendas.o
+release/moc_fm_logar.o
+release/moc_fm_novavenda.o
+release/moc_mainwindow.o

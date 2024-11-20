@@ -1,0 +1,17 @@
+debug/fm_editarprodutovenda.o
+debug/fm_gestaocolaboradores.o
+debug/fm_gestaoestoque.o
+debug/fm_gestaovendas.o
+debug/fm_logar.o
+debug/fm_novavenda.o
+debug/funcoes_globais.o
+debug/main.o
+debug/mainwindow.o
+debug/qrc_Arquivo_de_recursos.o
+debug/moc_fm_editarprodutovenda.o
+debug/moc_fm_gestaocolaboradores.o
+debug/moc_fm_gestaoestoque.o
+debug/moc_fm_gestaovendas.o
+debug/moc_fm_logar.o
+debug/moc_fm_novavenda.o
+debug/moc_mainwindow.o

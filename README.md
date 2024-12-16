@@ -55,10 +55,15 @@ Este repositório contém materiais, exercícios e exemplos práticos relacionad
 
 3. **Abrir Projetos no Qt Creator:** Utilize o Qt Creator para abrir e editar os projetos contidos nos diretórios.
 
-4. **Compilar e Executar os Códigos:** Utilize o compilador GCC integrado ao Qt Creator para compilar e executar os programas. Por exemplo:
+4. **Abrir e Editar os Códigos:** Utilize uma IDE compatível com a linguagem de programação utilizada no projeto. Por exemplo:
+
+   - [Visual Studio](https://visualstudio.microsoft.com/)
+   - [Code::Blocks](http://www.codeblocks.org/)
+
+5. **Compilar e Executar os Códigos:** Utilize as ferramentas de compilação fornecidas pela IDE escolhida ou compile manualmente utilizando o compilador GCC. Por exemplo, via linha de comando:
 
    ```bash
-   g++ nome_do_programa.cpp -o nome_do_executavel
+   g++ -o nome_do_executavel caminho/para/arquivo.cpp
    ./nome_do_executavel
    ```
 
